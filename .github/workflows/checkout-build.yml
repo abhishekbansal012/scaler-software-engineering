@@ -25,5 +25,8 @@ jobs:
     - name: Gradle Build Action
       uses: gradle/gradle-build-action@v3.5.0
 
+    - name: Gradle wrapper
+      run:  gradle wrapper
+
     - name: Run build with Gradle Wrapper
       run: ./gradlew build
