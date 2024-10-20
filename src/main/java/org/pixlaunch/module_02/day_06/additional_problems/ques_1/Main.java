@@ -1,7 +1,5 @@
 package org.pixlaunch.module_02.day_06.additional_problems.ques_1;
 
-import org.pixlaunch.module_02.day_06.assignment.ques_1.Solution;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -27,7 +25,7 @@ public class Main {
         System.out.println("Size of arrayA: "+ arrayA.size());
 
 
-        org.pixlaunch.module_02.day_06.assignment.ques_1.Solution solution = new Solution();
+        Solution solution = new Solution();
         System.out.println(solution.solve(arrayA, valueOfB));
 
     }
