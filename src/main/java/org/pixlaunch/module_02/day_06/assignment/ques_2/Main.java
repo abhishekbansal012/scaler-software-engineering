@@ -1,6 +1,4 @@
-package org.pixlaunch.day_06.assignment.ques_2;
-
-import org.pixlaunch.day_06.assignment.ques_2.Solution;
+package org.pixlaunch.module_02.day_06.assignment.ques_2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
