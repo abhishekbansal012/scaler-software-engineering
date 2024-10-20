@@ -21,3 +21,5 @@ out/
 
 ### Mac OS ###
 .DS_Store
+/gradle/*
+/.idea/intellij-javadocs-4.0.1.xml
