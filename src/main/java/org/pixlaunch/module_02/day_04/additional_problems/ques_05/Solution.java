@@ -1,4 +1,4 @@
-package org.pixlaunch.day_04.additional_problems.ques_05;
+package org.pixlaunch.module_02.day_04.additional_problems.ques_05;
 
 public class Solution {
 
