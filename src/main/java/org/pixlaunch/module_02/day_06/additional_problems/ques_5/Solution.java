@@ -7,24 +7,20 @@ public class Solution {
 
     public int solve(ArrayList<Integer> A) {
 
-        if (A.isEmpty() || A.size() == 1) return -1;
+        if (A.isEmpty() || A.size() == 1) {
+            return -1;
+        }
 
         // Find the maximum value in the array
         int max = A.stream().max(Comparator.naturalOrder()).orElse(Integer.MIN_VALUE);
-        int secondLargest = Integer.MIN_VALUE;
-        boolean secondLargergestUpdated = false;
+        int secondLargest = -1;
 
         for (int num : A) {
             if(num <max && num> secondLargest) {
                 secondLargest = num;
-                secondLargergestUpdated = true;
             }
         }
-
-        if(secondLargergestUpdated){
-            return secondLargest;
-        }
-        return -1;
+        return secondLargest;
     }
 
 }
