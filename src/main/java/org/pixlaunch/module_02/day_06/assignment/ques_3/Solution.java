@@ -30,5 +30,3 @@ public class Solution {
         }
     }
 }
-//7,4,2,10,5
-//10
