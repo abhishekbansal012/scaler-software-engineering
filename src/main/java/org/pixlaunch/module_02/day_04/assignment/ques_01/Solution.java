@@ -11,7 +11,7 @@ public class Solution {
         for(int i=1; i<Math.sqrt(a); i++) {
             if (a % i==0) {
                 if(i == a/i) {
-                    count++;
+                    count += 1;
                 } else {
                     count = count+2;
                 }
