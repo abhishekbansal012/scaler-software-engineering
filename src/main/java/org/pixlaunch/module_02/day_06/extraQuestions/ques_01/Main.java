@@ -1,4 +1,4 @@
-package org.pixlaunch.module_02.day_06.assignment.ques_3;
+package org.pixlaunch.module_02.day_06.extraQuestions.ques_01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,10 +25,10 @@ public class Main {
         System.out.println("Size of arrayA: "+ arrayA.size());
 
 
-        /*SolutionBruteforce solution = new SolutionBruteforce();
+        /*Solution solution = new Solution();
         System.out.println(solution.solve(arrayA, valueOfB));*/
 
-        Solution solution = new Solution();
+        SolutionBruteforce solution = new SolutionBruteforce();
         System.out.println(solution.solve(arrayA, valueOfB));
 
     }
