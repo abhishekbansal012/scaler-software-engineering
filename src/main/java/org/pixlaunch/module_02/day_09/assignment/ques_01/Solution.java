@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Solution {
 
     public int maxSubarray(int A, int B, ArrayList<Integer> C) {
-        return calculateMaxSunArray(B,C);
+        return calculateMaxSumArray(B,C);
     }
 
-    private int calculateMaxSunArray(int maxSum, ArrayList<Integer> arr) {
+    private int calculateMaxSumArray(int maxSum, ArrayList<Integer> arr) {
 
         int maxSumCapped=0;
         for (int i=0; i<arr.size();i++) {
