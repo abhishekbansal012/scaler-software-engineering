@@ -1,4 +1,4 @@
-package org.pixlaunch.day_template.assignment.ques_1;
+package org.pixlaunch.day_template.additional_problems.ques_1;
 
 import java.util.Scanner;
 
