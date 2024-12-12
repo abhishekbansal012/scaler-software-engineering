@@ -1,4 +1,4 @@
-package org.pixlaunch.day_template.assignment.ques_1;
+package org.pixlaunch.day_template.assignment.ques_01;
 
 public class Solution {
 
