@@ -4,7 +4,7 @@ public class Solution {
 
     public int solve(TreeNode A) {
 
-        int wholeTreeSum = wholeTreeSum(A);
+        long wholeTreeSum = wholeTreeSum(A);
 
         // If Whole tree sum is not even then it cannot be divided into two equal parts
         if(wholeTreeSum %2 !=0) {
@@ -23,7 +23,7 @@ public class Solution {
     }
 
 
-    private int wholeTreeSum(TreeNode node) {
+    private long wholeTreeSum(TreeNode node) {
         if(node == null) {
             return 0;
         }
@@ -31,14 +31,14 @@ public class Solution {
     }
 
 
-    int sum(TreeNode root, MutableBoolean ans, int totalSum) {
+    long sum(TreeNode root, MutableBoolean ans, long totalSum) {
 
         if(root == null) {
             return 0;
         }
 
-        int leftSum = sum(root.left, ans, totalSum);
-        int rightSum = sum(root.right, ans, totalSum);
+        long leftSum = sum(root.left, ans, totalSum);
+        long rightSum = sum(root.right, ans, totalSum);
 
         if(leftSum == totalSum/2 || rightSum == totalSum/2) {
             ans.value = true;
