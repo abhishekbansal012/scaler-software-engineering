@@ -1,6 +1,6 @@
-package org.pixlaunch.module_05.day_41.day_template.additional_problems.ques_1;
+package org.pixlaunch.module_05.day_41.additional_problems.ques_1;
 
-import org.pixlaunch.day_template.additional_problems.ques_1.Solution;
+import org.pixlaunch.day_template.additional_problems.ques_01.Solution;
 
 import java.util.Scanner;
 
