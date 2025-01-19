@@ -7,9 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] A = new int[]{10, 20, 30, 40, 50};
+        int[] A = new int[]{1, 2, 3, 5, 10};
         Solution solution = new Solution();
-        System.out.println(solution.sortedArrayToBST(A));
+        printTree(solution.sortedArrayToBST(A),0);
 
     }
 

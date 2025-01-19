@@ -6,9 +6,25 @@ public class Main {
     public static void main(String[] args) {
 
         // Create tree nodes
-        TreeNode root = new TreeNode(1);
+        /*TreeNode root = new TreeNode(2);
         root.right = new TreeNode(3);
-        root.right.left = new TreeNode(2);
+        root.left = new TreeNode(1);*/
+
+
+        TreeNode root = new TreeNode(10);
+
+        root.left = new TreeNode(7);
+        root.right = new TreeNode(15);
+
+        root.left.left = new TreeNode(4);
+
+        root.left.left.left = new TreeNode(3);
+        root.left.left.right = new TreeNode(6);
+
+        root.right.left = new TreeNode(12);
+        root.right.right = new TreeNode(20);
+
+
         printTree(root,0);
         Solution solution = new Solution();
         System.out.println(solution.isValidBST(root));
