@@ -1,5 +1,7 @@
 package org.pixlaunch.module_05.day_42.assignment.ques_03;
 
+import java.util.Objects;
+
 public class Solution {
 
     public TreeNode solve(TreeNode node, int B) {
@@ -17,11 +19,12 @@ public class Solution {
 
             //CASE-2: Node with 1 Child
             if (node.left == null || node.right == null) {
-                if (node.left == null) {
+                return Objects.requireNonNullElseGet(node.left, () -> node.right);
+                /*if (node.left == null) {
                     return node.right;
                 } else {
                     return node.left;
-                }
+                }*/
             } else {
                 //CASE-3: Node has both child
 
@@ -30,7 +33,7 @@ public class Solution {
                 while (curr.right != null) {
                     curr = curr.right;
                 }
-                //Swap largest value of LST with root node
+                //Swap the largest value of LST with root node
                 swapValues(node, curr);
 
 
