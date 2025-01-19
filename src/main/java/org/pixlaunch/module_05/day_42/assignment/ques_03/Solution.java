@@ -3,31 +3,31 @@ package org.pixlaunch.module_05.day_42.assignment.ques_03;
 public class Solution {
 
     public TreeNode solve(TreeNode node, int B) {
-        return delete(node,B);
+        return delete(node, B);
     }
 
     TreeNode delete(TreeNode node, int k) {
 
-        if(node.val == k) {
+        if (node.val == k) {
 
             //CASE-1: Leaf node
-            if(node.left == null && node.right == null) {
+            if (node.left == null && node.right == null) {
                 return null;
             }
 
             //CASE-2: Node with 1 Child
-            if(node.left==null || node.right==null) {
-                if(node.left == null) {
+            if (node.left == null || node.right == null) {
+                if (node.left == null) {
                     return node.right;
-                }else {
+                } else {
                     return node.left;
                 }
-            }else {
+            } else {
                 //CASE-3: Node has both child
 
                 //Find Largest value of LeftSubTree(LST)
                 TreeNode curr = node.left;
-                while (curr.right!=null) {
+                while (curr.right != null) {
                     curr = curr.right;
                 }
                 //Swap largest value of LST with root node
@@ -38,10 +38,6 @@ public class Solution {
                 node.left = delete(node.left, k);
 
             }
-
-
-
-
         } else if (k < node.val) {
             node.left = delete(node.left, k);
         } else {
