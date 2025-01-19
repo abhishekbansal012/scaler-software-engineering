@@ -1,4 +1,4 @@
-package org.pixlaunch.module_05.day_42.assignment.ques_01;
+package org.pixlaunch.module_05.day_42.assignment.ques_04;
 
 
 public class Main {
@@ -6,12 +6,22 @@ public class Main {
     public static void main(String[] args) {
 
         // Create tree nodes
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(3);
-        root.right.left = new TreeNode(2);
-        printTree(root,0);
+        TreeNode root = new TreeNode(15);
+
+        root.left = new TreeNode(12);
+        root.right = new TreeNode(20);
+
+        root.left.left = new TreeNode(10);
+        root.left.right = new TreeNode(14);
+
+        root.right.left = new TreeNode(16);
+        root.right.right = new TreeNode(27);
+
+        root.left.left.left = new TreeNode(8);
+
+        //printTree(root,0);
         Solution solution = new Solution();
-        System.out.println(solution.isValidBST(root));
+        System.out.println(solution.solve(root, 16));
 
     }
 

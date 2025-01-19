@@ -1,17 +1,15 @@
-package org.pixlaunch.module_05.day_42.assignment.ques_01;
+package org.pixlaunch.module_05.day_42.assignment.ques_02;
 
+
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        // Create tree nodes
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(3);
-        root.right.left = new TreeNode(2);
-        printTree(root,0);
+        int[] A = new int[]{10, 20, 30, 40, 50};
         Solution solution = new Solution();
-        System.out.println(solution.isValidBST(root));
+        System.out.println(solution.sortedArrayToBST(A));
 
     }
 

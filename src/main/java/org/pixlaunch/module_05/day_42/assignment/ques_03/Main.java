@@ -1,4 +1,4 @@
-package org.pixlaunch.module_05.day_42.assignment.ques_01;
+package org.pixlaunch.module_05.day_42.assignment.ques_03;
 
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
         root.right.left = new TreeNode(2);
         printTree(root,0);
         Solution solution = new Solution();
-        System.out.println(solution.isValidBST(root));
+        System.out.println(solution.solve(root, 10));
 
     }
 
