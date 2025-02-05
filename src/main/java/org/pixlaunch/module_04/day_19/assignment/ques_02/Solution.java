@@ -11,8 +11,6 @@ public class Solution {
             return -1;
         }
         int M = A.get(0).size();
-        int ans = -1;
-        //System.out.println("N: "+N+" M: "+M);
         int minIndex = Integer.MAX_VALUE;
 
         int i=0, j=M-1;
